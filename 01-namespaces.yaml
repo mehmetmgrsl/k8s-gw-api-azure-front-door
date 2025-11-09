@@ -6,9 +6,4 @@ metadata:
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: gateway-system   # Gateway controller + Gateway
----
-apiVersion: v1
-kind: Namespace
-metadata:
   name: apps          # Sample backend apps

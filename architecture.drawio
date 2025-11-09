@@ -1,0 +1,96 @@
+<mxfile host="Electron" modified="2025-11-09T19:49:26.088Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.21 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="iJG6drO7lZKDPnrqaXaJ" version="22.1.21" type="device">
+  <diagram name="Page-1" id="ccc8mf0bygg87FGcLG5e">
+    <mxGraphModel dx="1434" dy="854" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-26" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="270" width="440" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-1" value="" style="shape=actor;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="120" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-3" value="Client" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="IxUb2ltAbYcPXcxLyPFu-4" target="IxUb2ltAbYcPXcxLyPFu-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-4" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/networking/Front_Doors.svg;" parent="1" vertex="1">
+          <mxGeometry x="260" y="120" width="68" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-5" value="Azure Front Door-Sim&lt;br&gt;(nginx reverse proxy)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="229" y="80" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.015;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="IxUb2ltAbYcPXcxLyPFu-1" target="IxUb2ltAbYcPXcxLyPFu-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-7" value="HTTPS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="143" y="124" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;shape=flexArrow;" parent="1" source="IxUb2ltAbYcPXcxLyPFu-8" target="IxUb2ltAbYcPXcxLyPFu-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="IxUb2ltAbYcPXcxLyPFu-8" target="IxUb2ltAbYcPXcxLyPFu-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-8" value="web-gw-dp &lt;b&gt;Service&lt;/b&gt;&lt;br&gt;(NGF data-plane SVC)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="234" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-10" value="ClusterIP:443" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="414" y="315" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="IxUb2ltAbYcPXcxLyPFu-14" target="IxUb2ltAbYcPXcxLyPFu-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jjQ9v7eax_HXHkt2jPGX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="IxUb2ltAbYcPXcxLyPFu-14" target="jjQ9v7eax_HXHkt2jPGX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-14" value="web-gw &lt;b&gt;Gateway&lt;/b&gt;&lt;br&gt;(NGF controller)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="234" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-16" value="Gateway API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="290" y="380" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="IxUb2ltAbYcPXcxLyPFu-17" target="IxUb2ltAbYcPXcxLyPFu-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-17" value="&lt;b&gt;app-svc&lt;/b&gt;&lt;br&gt;(Demo App Service)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="234" y="578" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-19" value="&lt;b&gt;HTTPRoute&lt;/b&gt;&lt;br&gt;(routes / to app-svc)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="293" y="516" width="125" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;shape=flexArrow;" parent="1" target="IxUb2ltAbYcPXcxLyPFu-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="608" as="targetPoint" />
+            <mxPoint x="354" y="608" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-21" value="ClusterIP:80" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="414" y="593" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-22" value="echo-app Pod-1" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-24" value="echo-app Pod-1" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.442;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="IxUb2ltAbYcPXcxLyPFu-17" target="IxUb2ltAbYcPXcxLyPFu-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxUb2ltAbYcPXcxLyPFu-27" value="K8S Cluster (kind local)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="120" y="250" width="143" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jjQ9v7eax_HXHkt2jPGX-6" value="&lt;b&gt;GatewayClass&lt;/b&gt;&lt;br&gt;(nginx-gateway-controller&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="418" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jjQ9v7eax_HXHkt2jPGX-8" value="uses" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="354" y="444" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
