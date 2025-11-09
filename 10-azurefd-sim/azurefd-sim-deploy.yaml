@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azurefd-sim
+  namespace: edge
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: azurefd-sim }
+  template:
+    metadata:
+      labels: { app: azurefd-sim }
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.25
+        ports:
+          - containerPort: 8443
+        volumeMounts:
+          - name: cfg
+            mountPath: /etc/nginx/nginx.conf
+            subPath: nginx.conf
+          - name: tls
+            mountPath: /etc/nginx/tls
+          - name: ca
+            mountPath: /etc/nginx/ca
+      volumes:
+        - name: cfg
+          configMap:
+            name: azurefd-sim-nginx
+        - name: tls
+          secret:
+            secretName: azurefd-sim-tls
+        - name: ca
+          configMap:
+            name: azurefd-sim-ca

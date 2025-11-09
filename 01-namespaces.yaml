@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: edge          # Azure Front Door-SIM (Nginx)
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: gateway-system   # Gateway controller + Gateway
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: apps          # Sample backend apps

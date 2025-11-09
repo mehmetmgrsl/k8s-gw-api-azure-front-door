@@ -1,0 +1,18 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: app-route
+  namespace: apps
+spec:
+  parentRefs:
+    - name: web-gw
+      namespace: nginx-gateway
+  hostnames: ["localhost"]   # azurefd-sim 'Host' header
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /
+      backendRefs:
+        - name: app-svc
+          port: 80
